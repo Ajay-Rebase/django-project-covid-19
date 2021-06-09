@@ -125,7 +125,7 @@ USE_TZ = True
 
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'COVID/static/')
+    os.path.join(BASE_DIR, 'COVID_Project/COVID/static')
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
