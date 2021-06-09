@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Aarogya Setu</title>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/41/Aarogya_Setu_App_Logo.png" type="image/x-icon">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/41/Aarogya_Setu_App_Logo.png"
+        type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="{% static 'open-iconic/font/css/open-iconic-bootstrap.css' %}" rel="stylesheet">
@@ -62,6 +63,10 @@
 
     }
 
+    .container {
+        width: 300px;
+    }
+
     .guideform {
         width: 800px;
         border: 1px solid whitesmoke;
@@ -79,7 +84,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="{% url 'home' %}">
-                <img src="https://www.aarogyasetu.gov.in/wp-content/themes/setu/assets/images/aarogya_logo.png" height=60 width=220 class="d-inline-block alighn-top" />
+                <img src="https://www.aarogyasetu.gov.in/wp-content/themes/setu/assets/images/aarogya_logo.png"
+                    height=60 width=220 class="d-inline-block alighn-top" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,60 +122,72 @@
             <div>
                 <div class="form-group col-md-4">
                     <label for="inputState"><b>COUGH</b></label>
-                    <select id="inputState" class="form-control bg-dark text-white" name="cough">
-                        <option selected>CHOOSE...</option>
-                        <option>YES</option>
-                        <option>NO</option>
-                    </select>
+                    <div class="container">
+                        <select id="inputState" class="form-control bg-dark text-white" name="cough">
+                            <option selected>CHOOSE</option>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </select>
+                    </div>
                     <br>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputState"><b>FEVER</b></label>
-                    <select id="inputState" class="form-control bg-dark text-white" name="fever">
-                        <option selected>CHOOSE...</option>
-                        <option>YES</option>
-                        <option>NO</option>
-                    </select>
+                    <div class="container">
+                        <select id="inputState" class="form-control bg-dark text-white" name="fever">
+                            <option selected>CHOOSE</option>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </select>
+                    </div>
                     <br>
                 </div>
 
                 <div class="form-group col-md-4">
                     <label for="inputState"><b>SORE THROAT</b></label>
-                    <select id="inputState" class="form-control bg-dark text-white" name="sore">
-                        <option selected>CHOOSE...</option>
-                        <option>YES</option>
-                        <option>NO</option>
-                    </select>
+                    <div class="container">
+                        <select id="inputState" class="form-control bg-dark text-white" name="sore">
+                            <option selected>CHOOSE</option>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </select>
+                    </div>
                     <br>
                 </div>
 
                 <div class="form-group col-md-4">
                     <label for="inputState"><b>SHORTNESS OF BREATH</b></label>
-                    <select id="inputState" class="form-control bg-dark text-white" name="short">
-                        <option selected>CHOOSE...</option>
-                        <option>YES</option>
-                        <option>NO</option>
-                    </select>
+                    <div class="container">
+                        <select id="inputState" class="form-control bg-dark text-white" name="short">
+                            <option selected>CHOOSE</option>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </select>
+                    </div>
                     <br>
                 </div>
 
                 <div class="form-group col-md-4">
                     <label for="inputState"><b>HEADACHE</b></label>
-                    <select id="inputState" class="form-control bg-dark text-white" name="head">
-                        <option selected>CHOOSE...</option>
-                        <option>YES</option>
-                        <option>NO</option>
-                    </select>
+                    <div class="container">
+                        <select id="inputState" class="form-control bg-dark text-white" name="head">
+                            <option selected>CHOOSE</option>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </select>
+                    </div>
                     <br>
                 </div>
             </div>
 
-            <div style="color:black">
-                <h5><b><u>TO RECIEVE A COPY OF THE RESULT,PLEASE ENTER THE PHONE NUMBER</u></b></h5>
+            <div style="color:#03256c;">
+                <h4><b><u>TO RECIEVE A COPY OF THE RESULT,PLEASE ENTER THE PHONE NUMBER</u></b></h4>
             </div>
             <div class="form-group col-md-4">
                 <label for="inputState"><b>PHONE NUMBER</b></label>
-                <input type="text" id="inputState" class="form-control bg-dark text-white" name="number">
+                <div class="container">
+                    <input type="text" id="inputState" class="form-control bg-dark text-white" name="number">
+                </div>
             </div>
             <input class="btn btn-primary" type="submit" value="CHECK NOW" />
         </form>

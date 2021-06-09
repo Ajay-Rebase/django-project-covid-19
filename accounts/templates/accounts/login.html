@@ -104,6 +104,14 @@
     left: -35px;
     content: "✖";
   }
+
+  .container {
+    width: 300px;
+  }
+  .con {
+    width: 170px;
+  }
+  
 </style>
 <script>
   function myFunction() {
@@ -166,12 +174,13 @@
         <input class="bg-dark text-white" type="text" id="usrname" name="username" required>
 
         <label for="psw">PASSWORD</label>
-        <input class="bg-dark text-white" type="password" id="psw" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        <input class="bg-dark text-white" type="password" id="psw" name="password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
           title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
           required>
-        
-        <button type="submit" class="btn btn-danger" onclick="myFunction()">SHOW PASSWORD</button>
-        <br><br>
+        <div class="con">
+          <input type="button" class="btn btn-danger" onclick="myFunction()" value="SHOW PASSWORD">
+        </div>
         <button type="submit" class="btn btn-primary">LOGIN</button>
       </form>
     </div>
