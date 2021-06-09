@@ -25,7 +25,7 @@ SECRET_KEY = 'fkakv=02@=#$^o$wx^j&^7$=54@z*uck_@qhj825p3bq(hdv!p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','intense-brushlands-32638.herokuapp.com']
+ALLOWED_HOSTS = ['localhost','intense-brushlands-32638.herokuapp.com','0.0.0.0']
 
 
 # Application definition
@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'COVID.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'covid',
-        'USER':'postgres',
-        'PASSWORD':'ajayrahul',
-        'HOST':'localhost',
+        'NAME': 'ddltl62evupjiq',
+        'USER':'hxwdupxmvtzrwg',
+        'PASSWORD':'17227eae4545cd99080606d6a6861aec6d4674388901cad25c2c8754a069e92e',
+        'HOST':'ec2-107-21-10-179.compute-1.amazonaws.com',
         'PORT':'5432',
     }
 }
