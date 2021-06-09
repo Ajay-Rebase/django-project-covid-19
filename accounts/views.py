@@ -6,7 +6,6 @@ import requests
 import json
 from . import views
 import joblib
-from twilio.rest import Client
 
 def signup(request):
     if request.method == 'POST':
