@@ -17,6 +17,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&family=Ubuntu+Condensed&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
 </head>
 <style>
     body {
@@ -52,6 +60,15 @@
         left: 0;
         width: 100%;
     }
+    #footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height:100px;
+            background: grey;
+        }
 </style>
 
 <body>
@@ -87,23 +104,9 @@
     <center>
         <h2 style="color:#03256c"><u><b>COVID-19 PREDICTION</b></u></h2>
         <hr>
-        <h5><b>{{ans}}</b></h5>
+        <h5 style="color: #bb371a;"><b>{{ans}}</b></h5>
     </center>
-
     <hr>
-    <!--<div class="postion">
-        <div class="ad_footer_block">
-            <div class="region region-footer">
-                <div id="block-block-61" class="block block-block">
-                    <div class="content">
-                        <script type="text/javascript"
-                            src="https://www.mygov.in/footer_service/footerservice.js"></script>
-                        <div class="service-footer-wrapper"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -114,5 +117,25 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+<footer class="bg-primary text-center text-white" id="footer">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/AarogyaSetu/" class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a href="https://twitter.com/SetuAarogya?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a href="https://www.mygov.in/aarogya-setu-app/" class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+    
+        </section>
+        <!-- Section: Social media -->
+    </div>
+
+</footer>
 
 </html>
