@@ -14,12 +14,14 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="{% static 'open-iconic/font/css/open-iconic-bootstrap.css' %}" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&family=Ubuntu+Condensed&display=swap"
+    rel="stylesheet">
 </head>
 <style>
   body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 20px;
   }
 
   .form {
@@ -164,8 +166,6 @@
     background-color:#eec4c4;
     width: 20%;"><b>{{ error }}</b></h5>
   </center>
-  <br />
-  <br />
   {% endif %}
   <br>
   <center>
@@ -183,7 +183,7 @@
           title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
           required>
         <div class="con">
-          <input type="button" class="btn btn-danger" onclick="myFunction()" value="SHOW PASSWORD">
+          <input type="button" class="btn btn-success" onclick="myFunction()" value="SHOW PASSWORD">
         </div>
         <button type="submit" class="btn btn-primary">LOGIN</button>
       </form>
@@ -196,4 +196,15 @@
 
 </div>
 <hr>
+<center>
+  <div>
+    <footer class="text-muted">
+      <div class="container text-center">
+        <br>
+        <p>TOLL FREE NUMBER: 1075</p>
+        <h5><b>✅STAY HOME,STAY SAFE!!✅</b></h5>
+      </div>
+    </footer>
+</center>
+</div>
 {% endblock %}

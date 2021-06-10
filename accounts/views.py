@@ -29,7 +29,7 @@ def login(request):
             auth.login(request, user)
             return redirect('covid')
         else:
-            return render(request, 'accounts/login.html',{'error':'USERNAME OR PASSWORD IS INCORRECT.'})
+            return render(request, 'accounts/login.html',{'error':'USERNAME OR PASSWORD IS INCORRECT'})
     else:
         return render(request, 'accounts/login.html')
 
@@ -87,12 +87,12 @@ def result(request):
     string=""
     if(ans[0]==0):
 
-        string="THE PROBABILITY THAT YOU HAVE CONTRACTED THE VIRUS IS LOW!!BUT,PLEASE MAINTAIN SOCIAL DISTANCING AND FOLLOW OTHER COVID-19 PROTOCOLS!!GET VACCINATED AS SOON AS POSSIBLE💉"
+        string="THE PROBABILITY THAT YOU HAVE CONTRACTED THE VIRUS IS LOW!!BUT,PLEASE MAINTAIN SOCIAL DISTANCING AND FOLLOW OTHER COVID-19 PROTOCOLS!!GET VACCINATED AS SOON AS POSSIBLE"
         color="color:green"
     
     else:
         
-        string="❌PLEASE VISIT THE NEARBY HOSPITAL AND TAKE A COVID-19 TEST IMMEDIATELY!!STAY SAFE!!❌"
+        string="PLEASE VISIT THE NEARBY HOSPITAL AND TAKE A COVID-19 TEST IMMEDIATELY!!STAY SAFE!!"
         color="color:red"
     
   
