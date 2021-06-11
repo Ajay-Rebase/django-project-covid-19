@@ -169,7 +169,7 @@
   {% endif %}
   <br>
   <center>
-    <h4><b><u>LOGIN FOR STATUS CHECK</u></b></h4>
+    <h4 style="color: #03256c;"><b><u>LOGIN FOR STATUS CHECK</u></b></h4>
 
     <div class="container">
       <form method="POST" action="{% url 'login' %}">
@@ -183,7 +183,7 @@
           title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
           required>
         <div class="con">
-          <input type="button" class="btn btn-success" onclick="myFunction()" value="SHOW PASSWORD">
+          <input type="button" class="btn btn-warning" onclick="myFunction()" value="SHOW PASSWORD">
         </div>
         <button type="submit" class="btn btn-primary">LOGIN</button>
       </form>
