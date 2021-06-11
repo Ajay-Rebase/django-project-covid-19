@@ -109,6 +109,7 @@
 
   .container {
     width: 320px;
+    
   }
 
   .con {
@@ -172,7 +173,7 @@
     padding: 10px 10px;
     margin: 10px auto;
     background-color:#eec4c4;
-    width: 20%;"><b>{{ error }}</b></h5>
+    width: 40%;"><b>{{ error }}</b></h5>
   </center>
   {% endif %}
   <br>
@@ -183,16 +184,16 @@
       <form method="POST" action="{% url 'signup' %}">
         {% csrf_token %}
         <label for="usrname">USERNAME</label>
-        <input class="bg-dark text-white" type="text" id="usrname" name="username" required>
+        <input class="bg-white text-black" type="text" id="usrname" name="username" required>
 
         <label for="psw">PASSWORD</label>
-        <input class="bg-dark text-white" type="password" id="psw1" name="password1"
+        <input class="bg-white text-dark" type="password" id="psw1" name="password1"
           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
           title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
           required>
 
         <label for="psw">CONFIRM PASSWORD</label>
-        <input class="bg-dark text-white" type="password" id="psw2" name="password2"
+        <input class="bg-white text-dark" type="password" id="psw2" name="password2"
           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
           title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
           required>
