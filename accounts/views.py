@@ -99,7 +99,7 @@ def result(request):
 
     url = "https://www.fast2sms.com/dev/bulkV2"
 
-    querystring = {"authorization":"0milHNzreqxuJFGo7fB6y2aXEM3ZwIC9gAtsRWcpvLdjnSVOPbOXdY1T2ZpHfyI0u6JlREbKsaexjgSW","sender_id":"TXTIND","message":string,"route":"v3","numbers":data}
+    querystring = {"authorization":"Your ID","sender_id":"Sender ID","message":string,"route":"v3","numbers":data}
 
     headers = {
     'cache-control': "no-cache"
