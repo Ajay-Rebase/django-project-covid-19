@@ -11,6 +11,4 @@ urlpatterns = [
     path("vaccine",views.vaccine,name="vaccine"),
     path("covid",views.covid,name="covid"),
     path("result",views.result,name="result"),
-    
 ]
-

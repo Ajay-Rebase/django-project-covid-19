@@ -1,10 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
-import http.client
 import requests
-import json
-from . import views
 import joblib
 
 def signup(request):
@@ -109,4 +106,3 @@ def result(request):
 
     print(response.text)
     return render(request,'accounts/result.html',{"ans":string,"color":color})
-
